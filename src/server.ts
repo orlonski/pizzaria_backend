@@ -29,8 +29,6 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     })
 })
 
-const port = process.env.PORT || 3333
-
-app.listen(port, () => {
-    console.info(`Aplicação rodando em http://localhost:${port}`)
+app.listen(process.env.PORT, () => {
+    console.info(`Aplicação rodando`)
 });
