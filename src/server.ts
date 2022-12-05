@@ -29,4 +29,8 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     })
 })
 
-app.listen(3333, () => console.log('Servidor online !!!!'));
+const port = process.env.PORT || 3333
+
+app.listen(port, () => {
+    console.info(`Aplicação rodando em http://localhost:${port}`)
+});
