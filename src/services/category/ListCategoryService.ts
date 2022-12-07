@@ -10,7 +10,7 @@ class ListCategoryService {
             }
         })
 
-        return category.map(({ name: label, ...res }) => ({ label, ...res }));;
+        return category;
     }
 }
 
